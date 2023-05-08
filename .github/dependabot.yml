@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # Maintain dependencies for npm
+  - package-ecosystem: "npm"
+    directory: "/"
+    target-branch: "master"
+    ignore:
+      - dependency-name: "@angular/*"
+      - dependency-name: "@nrwl/*"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 100
+    
